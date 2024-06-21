@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    top: 0px;
+    width: 100%;
+    justify-content: end;
+    /* gap: 20px; */
+    background-color: rgb(238, 225, 225);
+    height: 26px;
+    align-items: center;
+    padding: 0 1px;
+}
+
+header i{
+    padding: 5px 9px;
+}
+
+header i:hover{
+    background-color: silver;
+}
+
+header :nth-child(3):hover{
+    background-color: red;
+}
+
+.container{
+    margin-top: 26px;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.menyu{
+    position: fixed;
+    left: 0px;
+    width: 80px;
+    height: 100vh;
+    background-color: rgb(78, 85, 94);
+    padding: 15px;
+    color: silver;
+}
+
+.messages{
+    position: fixed;
+    left: 80px;
+    width: 250px;
+    height: 100vh;
+    background-color: blueviolet;
+    overflow: auto;
+}
+
+.main{
+    position: fixed;
+    left: 330px;
+    width: calc(100%-330px);
+    height: 100vh;
+    background-color: yellow;
+}
+
+.menyu i{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+}
+
+.menyu p{
+    margin-top: -10px;
+    font-size: 10px;
+}
+
+.message{
+    display: flex;
+    background-color: white;
+}
+
+.message :hover{
+    background-color: silver;
+}
+
+.message :active{
+    background-color: rgb(83, 9, 232);
+}
+
+.message img{
+    border-radius: 50%;
+}
+
+.message h1{
+    font-size: 13px;
+}
+
+.message p{
+    font-size: 10px;
+}
+
+.main .pin, .message_name, .write{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.pin{
+    top: 65px;
+}
+
+.write{
+    bottom: 0px;
+}
